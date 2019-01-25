@@ -19,6 +19,7 @@ public class AntiCrashSingletonTest {
         unserializable();
     }
 
+    @SuppressWarnings("unchecked")
     public static void reflect() {
         // 1.测试 -> 反射破解单例
         try {
