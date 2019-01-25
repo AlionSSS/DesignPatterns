@@ -10,6 +10,10 @@ import com.skey.designpattern.factory.Phone;
  */
 public interface PhoneFactory {
 
+    /**
+     * 创建手机对象
+     * @return 手机对象
+     */
     Phone create();
 
 }
