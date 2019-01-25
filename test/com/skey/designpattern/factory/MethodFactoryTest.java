@@ -4,7 +4,7 @@ import com.skey.designpattern.factory.method.HuaweiFactory;
 import com.skey.designpattern.factory.method.SamsungFactory;
 
 /**
- * Description
+ * 方法工厂测试
  *
  * @author ALion
  * @version 2019/1/26 0:48
