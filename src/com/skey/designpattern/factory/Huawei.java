@@ -1,4 +1,4 @@
-package com.skey.designpattern.factory.simple;
+package com.skey.designpattern.factory;
 
 /**
  * 华为手机
