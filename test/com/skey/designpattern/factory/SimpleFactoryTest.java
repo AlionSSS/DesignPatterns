@@ -1,6 +1,5 @@
 package com.skey.designpattern.factory;
 
-import com.skey.designpattern.factory.simple.Phone;
 import com.skey.designpattern.factory.simple.PhoneFactory;
 
 /**

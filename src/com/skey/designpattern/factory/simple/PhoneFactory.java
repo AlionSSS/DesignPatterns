@@ -1,5 +1,9 @@
 package com.skey.designpattern.factory.simple;
 
+import com.skey.designpattern.factory.Huawei;
+import com.skey.designpattern.factory.Phone;
+import com.skey.designpattern.factory.Samsung;
+
 /**
  * 简单工厂-手机的工厂
  *
