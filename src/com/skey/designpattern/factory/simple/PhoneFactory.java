@@ -1,7 +1,7 @@
 package com.skey.designpattern.factory.simple;
 
 /**
- * 手机的简单工厂
+ * 简单工厂-手机的工厂
  *
  * @author ALion
  * @version 2019/1/26 0:18
