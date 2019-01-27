@@ -67,6 +67,7 @@ public class Book {
          * @return Book.Builder
          */
         public Builder paper(Paper paper) {
+            // 此处可以检查传参的合法性，例如paper是否为null
             this.paper = paper;
             return this;
         }
