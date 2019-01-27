@@ -1,7 +1,7 @@
 package com.skey.designpattern.builder;
 
 /**
- * Description
+ * 建造者模式测试
  *
  * @author ALion
  * @version 2019/1/27 20:14
