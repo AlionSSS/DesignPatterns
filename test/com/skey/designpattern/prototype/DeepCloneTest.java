@@ -11,8 +11,6 @@ import java.util.Date;
 public class DeepCloneTest {
 
     public static void main(String[] args) throws CloneNotSupportedException {
-
-
         System.out.println("------+--深克隆Test--+------");
 
         DeepApple apple = new DeepApple(10, "China", new Date());

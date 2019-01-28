@@ -10,7 +10,6 @@ import java.util.Date;
  */
 public class ShallowCloneTest {
 
-
     public static void main(String[] args) throws CloneNotSupportedException {
         System.out.println("------+--浅克隆Test--+------");
 
