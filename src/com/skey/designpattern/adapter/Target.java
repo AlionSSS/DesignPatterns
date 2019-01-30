@@ -1,7 +1,7 @@
 package com.skey.designpattern.adapter;
 
 /**
- * 接口
+ * 电源接口
  *
  * @author ALion
  * @version 2019/1/29 22:45
