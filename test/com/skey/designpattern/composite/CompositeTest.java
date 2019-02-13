@@ -15,15 +15,19 @@ public class CompositeTest {
         Composite rootDir = new Directory("我的收藏");
         Composite imageDir = new Directory("图片");
         rootDir.add(imageDir);
+        Composite sceneryImage1Dir = new Directory("风景图");
+        imageDir.add(sceneryImage1Dir);
         Composite videoDir = new Directory("视频");
         rootDir.add(videoDir);
         Composite textDir = new Directory("文档");
         rootDir.add(textDir);
 
         Component imageA = new ImageFile("AAAA.png");
-        Component imageB = new ImageFile("BBBB.png");
         imageDir.add(imageA);
+        Component imageB = new ImageFile("BBBB.png");
         imageDir.add(imageB);
+        Component imageC = new ImageFile("风景CCC.png");
+        sceneryImage1Dir.add(imageC);
 
         Component videoQ = new VideoFile("QQQQ.mp4");
         videoDir.add(videoQ);
