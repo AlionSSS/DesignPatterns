@@ -45,5 +45,4 @@ public class Directory implements Composite {
         return files.get(index);
     }
 
-
 }
