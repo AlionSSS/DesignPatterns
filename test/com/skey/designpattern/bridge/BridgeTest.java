@@ -1,7 +1,9 @@
 package com.skey.designpattern.bridge;
 
 import com.skey.designpattern.bridge.brand.Gree;
+import com.skey.designpattern.bridge.brand.Media;
 import com.skey.designpattern.bridge.product.AirConditioner;
+import com.skey.designpattern.bridge.product.ElectricFan;
 import com.skey.designpattern.bridge.product.Equipment;
 
 /**
@@ -16,6 +18,8 @@ public class BridgeTest {
         Equipment equipment = new AirConditioner(new Gree());
         equipment.sale();
 
+        Equipment equipment2 = new ElectricFan(new Media());
+        equipment2.sale();
 
     }
 
