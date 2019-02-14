@@ -10,7 +10,7 @@ package com.skey.designpattern.prototype;
  * @author ALion
  * @version 2019/1/28 23:37
  */
-public class Homework implements Cloneable{
+public class Homework implements Cloneable {
 
     public Homework() {
         try {
