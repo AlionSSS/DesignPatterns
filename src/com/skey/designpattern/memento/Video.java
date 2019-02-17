@@ -54,6 +54,7 @@ public class Video {
 
     /**
      * 从备份处恢复
+     *
      * @param memento 备份
      */
     public void recovery(VideoMemento memento) {

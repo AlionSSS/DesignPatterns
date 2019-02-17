@@ -15,7 +15,7 @@ public class MementoTest {
         System.out.println(video);
 
         System.out.println("开始看电影");
-        for (int i = video.getProgress(); i <= 70; i+=10) {
+        for (int i = video.getProgress(); i <= 70; i += 10) {
             video.setProgress(i);
             System.out.println("电影播放了" + i + "%了");
         }
@@ -25,7 +25,7 @@ public class MementoTest {
         VideoMemento memento = video.memento();
         careTaker.setMemento("high tide", memento);
 
-        for (int i = video.getProgress() + 10; i <= 100; i+=10) {
+        for (int i = video.getProgress() + 10; i <= 100; i += 10) {
             video.setProgress(i);
             System.out.println("电影播放了" + i + "%了");
         }

@@ -29,7 +29,6 @@ public class VideoMemento {
         return size;
     }
 
-
     public int getProgress() {
         return progress;
     }
