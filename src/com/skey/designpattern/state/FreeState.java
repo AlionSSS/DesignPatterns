@@ -1,7 +1,7 @@
 package com.skey.designpattern.state;
 
 /**
- * 空闲状态
+ * 房间空闲状态
  *
  * @author ALion
  * @version 2019/2/17 23:53

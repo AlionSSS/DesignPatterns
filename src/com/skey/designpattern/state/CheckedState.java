@@ -1,7 +1,7 @@
 package com.skey.designpattern.state;
 
 /**
- * 已入住状态
+ * 房间已入住状态
  *
  * @author ALion
  * @version 2019/2/17 23:53
