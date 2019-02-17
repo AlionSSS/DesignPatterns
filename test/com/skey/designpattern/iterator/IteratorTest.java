@@ -20,7 +20,6 @@ public class IteratorTest {
             System.out.println(iterator.next());
         }
 
-
     }
 
 }
