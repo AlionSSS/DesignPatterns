@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 负责人
+ * 视频备份维护的负责人
  *
  * @author ALion
  * @version 2019/2/18 0:27
