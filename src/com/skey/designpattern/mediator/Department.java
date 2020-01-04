@@ -14,7 +14,7 @@ public interface Department {
     void selfAction();
 
     /**
-     * 想总经理发出请求
+     * 向总经理发出请求
      */
     void outAction();
 
