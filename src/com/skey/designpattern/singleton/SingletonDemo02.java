@@ -8,11 +8,10 @@ package com.skey.designpattern.singleton;
  */
 public class SingletonDemo02 {
 
-    // volatile防止JIT优化器对指令重排序（会导致线程不安全）
-    // 原先创建顺序：1.创建对象的内存实例 2.创建对象引用
-    // JIT优化重排序后：1.创建对象引用 2.创建对象的内存实例
-    // 解释: 重排序后，优先创建了对象引用，所以instance == null可能会返回false，
-    // 这个时候就会直接返回对象，但是对象可能还没创建在内存的实例，因此会导致空指针
+    // volatile防止优化器对指令重排序（会导致线程不安全）
+    // 原先创建顺序：1.对象版半始化 2.调用对象init方法，完成初始化 3.获取到对象
+    // JIT优化重排序后：1.对象版半始化 2.获取到对象 3.调用对象init方法，完成初始化
+    // 解释: 重排序后，获取到的对象是半初始化的对象，直接使用可能导致部分问题
     private static volatile SingletonDemo02 instance;
 
     // 私有，防止直接实例化（不过仍会被反射实例化）
