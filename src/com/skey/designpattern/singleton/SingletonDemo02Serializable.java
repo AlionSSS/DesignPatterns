@@ -10,7 +10,7 @@ import java.io.Serializable;
  */
 public class SingletonDemo02Serializable implements Serializable {
 
-    private static SingletonDemo02Serializable instance;
+    private static volatile SingletonDemo02Serializable instance;
 
     private SingletonDemo02Serializable() {
     }
