@@ -22,18 +22,27 @@ public class HomeContext {
         return state;
     }
 
+    /**
+     * 清空房间
+     */
     public void free() {
         if (state.free()) {
             state = freeState;
         }
     }
 
+    /**
+     * 预订该房间
+     */
     public void book() {
         if (state.book()) {
             state = bookedState;
         }
     }
 
+    /**
+     * 入住该房间
+     */
     public void check() {
         if (state.check()) {
             state = checkedState;
