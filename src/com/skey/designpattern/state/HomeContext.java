@@ -28,7 +28,11 @@ public class HomeContext {
     public void free() {
         if (state.free()) {
             state = freeState;
+            System.out.println("HomeContext.free: 房间已被清空！");
+        } else {
+            System.out.println("HomeContext.free: 房间清空失败！");
         }
+        printState();
     }
 
     /**
@@ -37,7 +41,11 @@ public class HomeContext {
     public void book() {
         if (state.book()) {
             state = bookedState;
+            System.out.println("HomeContext.book: 房间预订成功！");
+        } else {
+            System.out.println("HomeContext.book: 房间预订失败！");
         }
+        printState();
     }
 
     /**
@@ -46,7 +54,15 @@ public class HomeContext {
     public void check() {
         if (state.check()) {
             state = checkedState;
+            System.out.println("HomeContext.check: 入住房间成功！");
+        } else {
+            System.out.println("HomeContext.check: 入住房间失败！");
         }
+        printState();
+    }
+
+    private void printState() {
+        System.out.println(">>>>>>> 当前房间状态: " + state);
     }
 
 }

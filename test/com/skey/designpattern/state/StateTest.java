@@ -17,7 +17,6 @@ public class StateTest {
 
         // 来人预订房间
         context.book();
-        System.out.println(context.getState());
         // 再来一个人预订房间
         context.book();
 
@@ -27,7 +26,6 @@ public class StateTest {
         context.check();
         // 再来一个人入住房间
         context.book();
-        System.out.println(context.getState());
     }
 
 }
