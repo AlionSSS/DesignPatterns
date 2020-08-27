@@ -9,16 +9,25 @@ package com.skey.designpattern.state;
 public class StateTest {
 
     public static void main(String[] args) {
+        // 状态模式，只需要管外部操作即可，内部会自动切换状态
+
         HomeContext context = new HomeContext();
+        // 初始是空闲状态
+        System.out.println(context.getState());
 
-        State freeState = new FreeState();
-        context.setState(freeState);
+        // 来人预订房间
+        context.book();
+        System.out.println(context.getState());
+        // 再来一个人预订房间
+        context.book();
 
-        State bookedState = new BookedState();
-        context.setState(bookedState);
-
-        State checkedState = new CheckedState();
-        context.setState(checkedState);
+        // 入住房间
+        context.check();
+        // 再来一个人预订房间
+        context.check();
+        // 再来一个人入住房间
+        context.book();
+        System.out.println(context.getState());
     }
 
 }

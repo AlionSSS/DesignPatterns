@@ -8,12 +8,36 @@ package com.skey.designpattern.state;
  */
 public class HomeContext {
 
+    private static final FreeState freeState = new FreeState();
+    private static final BookedState bookedState = new BookedState();
+    private static final CheckedState checkedState = new CheckedState();
+
     private State state;
 
-    public void setState(State state) {
-        System.out.println("HomeContext.setState 房间状态改变");
-        this.state = state;
-        state.handle();
+    public HomeContext() {
+        this.state = new FreeState();
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public void free() {
+        if (state.free()) {
+            state = freeState;
+        }
+    }
+
+    public void book() {
+        if (state.book()) {
+            state = bookedState;
+        }
+    }
+
+    public void check() {
+        if (state.check()) {
+            state = checkedState;
+        }
     }
 
 }

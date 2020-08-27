@@ -8,6 +8,10 @@ package com.skey.designpattern.state;
  */
 public interface State {
 
-    void handle();
+    boolean free();
+
+    boolean book();
+
+    boolean check();
 
 }
